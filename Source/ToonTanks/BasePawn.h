@@ -15,6 +15,18 @@ public:
 	// Sets default values for this pawn's properties
 	ABasePawn();
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		float Stamina = 150.f;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+		int32 Health = 100;
+
+	UPROPERTY(EditDefaultsOnly)
+		int32 EditDefaultOnlyInt = 9;
+
+	UPROPERTY(EditInstanceOnly)
+		int32 EditInstanceOnlyInt = 15;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
