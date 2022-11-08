@@ -52,7 +52,7 @@ void ATank::Tick(float DeltaTime)
 			ECollisionChannel::ECC_Visibility, 
 			false, 
 			HitResult);
-		DrawDebugSphere(GetWorld(), HitResult.ImpactPoint, 24, 12, FColor::Red);
+		//DrawDebugSphere(GetWorld(), HitResult.ImpactPoint, 24, 12, FColor::Red);
 		RotateTurret(HitResult.ImpactPoint);
 	}
 }
